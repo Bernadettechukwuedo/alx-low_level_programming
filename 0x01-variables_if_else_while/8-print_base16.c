@@ -8,12 +8,12 @@ int main(void)
 {
 	char base;
 
-	for (base = 0; base <= 9; base++)
+	for (base = 48; base <= 57; base++)
 	{
 	putchar(base);
 	}
 
-	for (base = "A"; base < "F"; base++)
+	for (base = 97; base <= 102; base++)
 	{
 	putchar(base);
 	}
