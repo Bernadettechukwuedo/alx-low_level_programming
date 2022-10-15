@@ -6,17 +6,16 @@
  */
 int main(void)
 {
-	int y;
-	int x;
+	int num1, num2;
 
-	for (y = 0; x < 9; y++)
+	for (num1 = 0; num1 < 9; num1++)
 	{
-		for (x = 0; y < 9; x++)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			putchar((y % 10) + 0);
-			putchar((x % 10) + 0);
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
 
-			if (y == 8 && x == 9)
+			if (num1 == 8 && num2 == 9)
 				continue;
 
 			putchar(',');
@@ -25,5 +24,6 @@ int main(void)
 	}
 
 	putchar('\n');
+
 	return (0);
 }
