@@ -6,7 +6,14 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char string[] = "_putchar";
+	int i = 0;
+
+	for (; i < 8; i++)
+	{
+	_putchar(string[i]);
+	}
+	_putchar('\n');
 
 	return (0);
 }
