@@ -2,15 +2,15 @@
 /**
  * print_numbers - prints the numbers
  *
- * Return: void
+ * Return: int
  */
 void print_numbers(void)
 {
-	char i;
+	char c;
 
-	for (i = 0; i <= 9; i++)
+	for (c = 0; c <= 9; c++)
 	{
-	_putchar('0' + i);
+	_putchar('0' + c);
 	}
 	_putchar('\n');
 }
