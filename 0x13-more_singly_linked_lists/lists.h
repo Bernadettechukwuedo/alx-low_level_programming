@@ -26,6 +26,7 @@ typedef struct listint_s
 
 /**
  * struct listptr_s - singly linked list
+ * 
  * @p: pointers of nodes
  * @next: points to the next node
  *
@@ -59,5 +60,6 @@ listint_t *add_nodeint_end(listint_t **, const int);
 listint_t *get_nodeint_at_index(listint_t *, unsigned int);
 listint_t *insert_nodeint_at_index(listint_t **, unsigned int, int);
 void free_listint(listint_t *);
-void free_listint2(listint_t **);
+void free_listint2(listint_t **);i
+size_t print_listint_safe(const listint_t *head);
 #endif
